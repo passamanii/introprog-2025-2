@@ -14,7 +14,6 @@ Conteúdo
 - Cálculo de média
 - Busca em listas
 - Intervalos numéricos
-- Cálculo de área
 - Série de Taylor
 - Fatorial
 
