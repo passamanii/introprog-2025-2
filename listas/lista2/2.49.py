@@ -1,12 +1,18 @@
 def main():
-
-    a = float(input('Informe o valor para o coeficiente "a":'))
-    b = float(input('Informe o valor para o coeficiente "b":'))
-    c = float(input('Informe o valor para o coeficiente "c":'))
-
-    raiz1, raiz2 = calcula_raizes(a, b, c)
-    print_raizes(a, b, c, raiz1, raiz2)
     
+    while (True):
+
+        a = float(input('\nInforme o valor para o coeficiente "a":'))
+        b = float(input('Informe o valor para o coeficiente "b":'))
+        c = float(input('Informe o valor para o coeficiente "c":'))
+
+        raiz1, raiz2 = calcula_raizes(a, b, c)
+        print_raizes(a, b, c, raiz1, raiz2)
+
+        reload = input('\nDeseja calcular mais raízes(S/N)?').upper()
+
+        if (reload == 'N'):
+            break
 
 def calcula_raizes(a, b, c):
 
