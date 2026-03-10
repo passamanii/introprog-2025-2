@@ -25,6 +25,8 @@ def  CALCULA_BITS_RECURSAO(x):
 #A função retornar bits significa retornar o valor total, não a sua parcela individual, essa sendo str(resto).
 # bits = 1 --> bits = 10 --> bits = 100.
 
+#Fiz a função usando loop em uns 7 minutos. Já usando recursividade levei facilmente uns 40.
+
 def CALCULA_BITS_LOOP(x):
 
     bits = ''
