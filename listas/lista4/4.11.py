@@ -9,13 +9,21 @@ def  CALCULA_BITS_RECURSAO(x):
 
     bits = ''
 
-    if (x == 1):
-        bits += str('1')
+    if (x == 0):
+        bits += str('0')
     else:
         resto = (x%2)
         bits += CALCULA_BITS_RECURSAO(x//2)+str(resto) 
   
     return bits #Complexo. Consegui fazer mas ainda tá nebuloso na minha mente.
+
+#Número 4
+#4%2 = 0
+#2%2 = 0
+#1%2 = 1
+#Usar bits = bits + str(resto) faz com que a recursão construa os bits na ordenação correta.
+#A função retornar bits significa retornar o valor total, não a sua parcela individual, essa sendo str(resto).
+# bits = 1 --> bits = 10 --> bits = 100.
 
 def CALCULA_BITS_LOOP(x):
 
